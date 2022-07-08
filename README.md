@@ -1,4 +1,6 @@
+![analogz-basics](https://user-images.githubusercontent.com/36761468/178030171-4bf6cce5-1638-47f9-9b89-4f1472ce638d.png)
 # analogs-basics
+
 Simple examples of analog methods or "k nearest neighbours", building from the scikit-learn library.
 Created for beginners who want to start using analog methods with python.
 
