@@ -104,3 +104,32 @@ def sep_traj(dist, ind, closest=True):
     
     return dist_separated, ind_separated
 
+
+############################
+#### COMPUTE DIMENSION #####
+############################
+
+def locdim(dist, q=1):
+    # algotirhm to estimate the local dimension of a given query or 'target'
+    # dist : analog-to-target distances, sorted, shape = (number of querys, number of analogs per query)
+    # q : scalar > 0, parameter for the estimation
+    # method : 'direct' or 'incremental'
+    if len(dist.shape)!=2:
+        print('Error: reshape your distances : (number of queries, number of analogs per query)')
+    
+    K = dist.shape[1]
+    logdist = np.log(dist)
+        
+        
+    if q <= 0 :
+        print('Error: q must be > 0.')
+        return np.nan
+    
+    else:
+        increments = - logdist[:,:-1].T + logdist[:,-1]
+        weights = q**2 * (1/K) * (np.arange(2,K+1)/K)**(q-1)
+        return np.sum( increments.T * weights, axis=1 )**(-1)
+            
+
+
+
