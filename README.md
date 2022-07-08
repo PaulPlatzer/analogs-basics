@@ -1,5 +1,8 @@
 # analogs-basics
-Simple examples of analog methods building from scikit-learn.
+Simple examples of analog methods or "k nearest neighbours", building from the scikit-learn library.
 Created for beginners who want to start using analog methods with python.
 
-Note: a nice repo about using analogs to estimate dimension and persistence is https://github.com/yrobink/CDSK 
+----------------------------------------
+OTHER REPOSITORIES:
+- combine analogs and data assimilation https://github.com/ptandeo/AnDA
+- using analogs to estimate dimension and persistence https://github.com/yrobink/CDSK 
