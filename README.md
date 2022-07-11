@@ -12,3 +12,4 @@ https://scikit-learn.org/stable/index.html
 OTHER REPOSITORIES:
 - combine analogs and data assimilation https://github.com/ptandeo/AnDA
 - using analogs to estimate dimension and persistence https://github.com/yrobink/CDSK 
+- a web processing service for extreme weather, with analogue-based tools https://github.com/bird-house/blackswan
